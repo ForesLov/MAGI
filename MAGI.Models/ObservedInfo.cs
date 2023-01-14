@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MAGI.Models
 {
-    public class ObservedInfo
+    public class ObservedInfo : EntityBase
     {
         public List<DbTable> ObservedTables { get; set; } = new ();
     }

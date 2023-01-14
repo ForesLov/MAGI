@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MAGI.Models
 {
-    public class DbTableColumn
+    public class DbTableColumn : EntityBase
     {
         public string Name { get; set; }
         public string Type { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace MAGI.Models
 {
-    public class Database
+    public class Database:EntityBase
     {
         public string Name { get; set; }
         public string ConnectionString { get; set; }
