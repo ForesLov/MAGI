@@ -28,6 +28,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "API/{controller=Databases}/{action=Databases}/{id?}");
 
 app.Run();

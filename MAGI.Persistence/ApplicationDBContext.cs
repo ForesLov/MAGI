@@ -12,5 +12,5 @@ namespace MAGI.Persistece;
 public class ApplicationDBContext : DbContext
 {
     public ApplicationDBContext(DbContextOptions options) : base(options) { Database.EnsureCreated(); }
-    public DbSet<Database> Databases { get; set; }
+    public DbSet<Database> ObservedDatabases { get; set; }
 }
