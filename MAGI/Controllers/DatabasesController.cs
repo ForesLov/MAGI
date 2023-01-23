@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MAGI.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("[controller]/[action]")]
 public class DatabasesController : ControllerBase
 {
     private readonly ApplicationDBContext _context;
