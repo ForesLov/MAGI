@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace MAGI.Models
+namespace MAGI.Models;
+
+public class ObservedInfo : EntityBase
 {
-    public class ObservedInfo : EntityBase
-    {
-        public List<DbTable> ObservedTables { get; set; } = new ();
-    }
+    public DbTable ObservedTable { get; set; }
+    public List<DbTableColumn> DbTableColumns { get; set; } = new();
+
 }
